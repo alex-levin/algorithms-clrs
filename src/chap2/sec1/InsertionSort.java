@@ -1,5 +1,7 @@
 package chap2.sec1;
 
+import java.util.Arrays;
+
 import common.Util;
 
 public class InsertionSort {
@@ -25,6 +27,18 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {5, 2, 4, 6, 1, 3};
         int[] sorted = sort(arr);
-        Util.printArray(sorted);
+        System.out.println(Arrays.toString(sorted));
     }
 }
+
+/*
+5, 2, 4, 6, 1, 3 cur is 2
+2, 5, 4, 6, 1, 3 cur is 4
+2, 4, 5, 6, 1, 3 cur is 6
+2, 4, 5, 6, 1, 3 cur is 1
+1, 2, 4, 5, 6, 3 cur is 3
+1, 2, 3, 4, 5, 6
+
+
+ */
+
