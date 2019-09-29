@@ -2,7 +2,6 @@ package chap2.sec1;
 
 import java.util.Arrays;
 
-import common.Util;
 
 public class InsertionSort {
 	
